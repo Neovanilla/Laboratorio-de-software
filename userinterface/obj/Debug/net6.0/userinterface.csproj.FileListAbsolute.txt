@@ -28,3 +28,18 @@ C:\Users\Vanilla\Desktop\primer_proyecto\primer proyecto\userinterface\obj\Debug
 C:\Users\Vanilla\Desktop\primer_proyecto\primer proyecto\userinterface\obj\Debug\net6.0\userinterface.pdb
 C:\Users\Vanilla\Desktop\primer_proyecto\primer proyecto\userinterface\obj\Debug\net6.0\userinterface.genruntimeconfig.cache
 C:\Users\Vanilla\Desktop\primer_proyecto\primer proyecto\userinterface\obj\Debug\net6.0\ref\userinterface.dll
+D:\Laboratorio-de-software\userinterface\bin\Debug\net6.0\userinterface.exe
+D:\Laboratorio-de-software\userinterface\bin\Debug\net6.0\userinterface.deps.json
+D:\Laboratorio-de-software\userinterface\bin\Debug\net6.0\userinterface.runtimeconfig.json
+D:\Laboratorio-de-software\userinterface\bin\Debug\net6.0\userinterface.dll
+D:\Laboratorio-de-software\userinterface\bin\Debug\net6.0\ref\userinterface.dll
+D:\Laboratorio-de-software\userinterface\bin\Debug\net6.0\userinterface.pdb
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.csproj.AssemblyReference.cache
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.AssemblyInfoInputs.cache
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.AssemblyInfo.cs
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.csproj.CoreCompileInputs.cache
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.dll
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\ref\userinterface.dll
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.pdb
+D:\Laboratorio-de-software\userinterface\obj\Debug\net6.0\userinterface.genruntimeconfig.cache
