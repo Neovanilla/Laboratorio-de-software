@@ -8,19 +8,20 @@ namespace userinterface
 {
     internal class Empleado {
 
-        private string nombre;
-        private string apellido;
-        private int edad;
-        private string direccion;
-        private string dni;
-        private int antiguedad;
-        private string telefono;
-        private double  salario;
-        private Supervisor supervisor;
+        protected string nombre;
+        protected string apellido;
+        protected int edad;
+        protected string direccion;
+        protected string dni;
+        protected int antiguedad;
+        protected int anioNacimiento;
+        protected string telefono;
+        protected double  salario;
+        protected Supervisor supervisor;
 
 
         public Empleado(string nombre, string apellido, int edad, string direccion,
-            string dni, int antiguedad, string telefono, int salario)
+            string dni, int antiguedad, string telefono, int salario ,int anioNacimiento)
         {
             this.nombre = nombre;
             this.apellido = apellido;
@@ -30,7 +31,9 @@ namespace userinterface
             this.antiguedad = antiguedad;
             this.telefono = telefono;
             this.salario = salario;
+            this.anioNacimiento = anioNacimiento;
         }
+
 
         public virtual string presentarse()
         {
@@ -54,7 +57,20 @@ namespace userinterface
 
         public virtual void aumentarSalario()
         {
-            this.salario *= 1.1;
+
+            var por = (this.antiguedad * 0.01); //año antiguedad
+
+           this.salario *= 1.1; //incremento 10%
+
+            if(por > 0) { 
+           this.salario *= ( 1+  por);
+            }
+
+            if (this.anioNacimiento <= 1964)
+            {
+                this.salario *= 1.05; //si pasa el if aumenta un 5%
+
+            }
         }
 
         public string getNombre()
@@ -80,6 +96,11 @@ namespace userinterface
         public void cambiarSupervisor(Supervisor supervisor)
         {
             this.supervisor = supervisor;
+        }
+
+        public int getAntiguedad()
+        {
+            return this.antiguedad;
         }
 
      

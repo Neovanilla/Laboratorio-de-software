@@ -8,8 +8,8 @@ namespace userinterface
 {
     internal class Secretario : Empleado
     {
-        public Secretario(string nombre, string apellido, int edad, string direccion, string dni, int antiguedad, string telefono, int salario) : 
-            base(nombre, apellido, edad, direccion, dni, antiguedad, telefono, salario)
+        public Secretario(string nombre, string apellido, int edad, string direccion, string dni, int antiguedad, string telefono, int salario, int anioNacimiento) : 
+            base(nombre, apellido, edad, direccion, dni, antiguedad, telefono, salario,anioNacimiento)
         {
         }
     }
