@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,16 +9,16 @@ namespace userinterface
 {
 
 
-    internal class Supervisor:Empleado
+    internal class Supervisor : Empleado
     {
-        
+
         private Secretario secretario;
         private string despacho;
         private Coche coche;
-      
+
         private List<Empleado> empleados = new List<Empleado>();
 
-        public Supervisor(string nombre, string apellido, int edad, string direccion, string dni, int antiguedad, string telefono, int salario, int anioNacimiento, string despacho, Coche coche , Secretario secretario) 
+        public Supervisor(string nombre, string apellido, int edad, string direccion, string dni, int antiguedad, string telefono, int salario, int anioNacimiento, string despacho, Coche coche, Secretario secretario)
             : base(nombre,
                    apellido,
                    edad,
@@ -28,7 +29,7 @@ namespace userinterface
                    salario,
                    anioNacimiento)
         {
-            this.coche = coche; 
+            this.coche = coche;
             this.despacho = despacho;
             this.secretario = secretario;
         }
@@ -47,16 +48,27 @@ namespace userinterface
         public override void aumentarSalario()
         {
             var por = (this.getAntiguedad() * 0.01);
-            this.salario *=  (1 + por);
-            Console.WriteLine(this.salario);
-      
+            var emp = (this.empleados.Count * 0.01);
+
+            this.salario *= (1 + por + emp);
             this.salario *= 1.2;
-            Console.WriteLine(this.salario);
         }
 
         public string nombreSupervisor()
         {
             return this.getNombre();
+        }
+
+        public double salarioEmpleados()
+        {
+            double sum = 0;
+
+            this.empleados.ForEach(e =>
+            {
+                sum += e.getSalario();
+            }
+            );
+            return sum;
         }
 
         public override string presentarse()

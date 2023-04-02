@@ -22,7 +22,9 @@ Console.WriteLine(franco.presentarse());
 
 Console.WriteLine(cristian.presentarse());
 cristian.aumentarSalario();
+Console.WriteLine(cristian.salarioEmpleados());
 Console.WriteLine(cristian.presentarse());
+
 
 
 
